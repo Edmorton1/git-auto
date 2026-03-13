@@ -12,4 +12,4 @@ if (command) {
   process.exit(0);
 }
 
-console.log('casd3asdasdasd4');
+console.log('casd3asdasdasd4123123');
