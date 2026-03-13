@@ -11,7 +11,7 @@ const getPrefix = (env) => {
   }
 };
 
-module.exports = (task, env) => {
+module.exports = (task, env = 'develop') => {
   const prefix = getPrefix(env);
 
   const branch = `${prefix}/EUTP-${task}`;
