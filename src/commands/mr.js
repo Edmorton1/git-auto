@@ -16,8 +16,8 @@ module.exports = (task, env) => {
 
   const branch = `${prefix}/EUTP-${task}`;
 
-  run(`git switch ${env}`);
-  run(`git switch -c ${branch}`);
+  run(`git checkout ${env}`);
+  run(`git checkout -b ${branch}`);
   run(`git commit -m https://youtrack.esoft.tech/issue/EUTP-${task}`);
   run(`git push -u origin ${branch}`);
 };
