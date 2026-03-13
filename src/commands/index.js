@@ -7,8 +7,13 @@ class Commander {
   };
 
   pull = () => {
-    run('git restore package.json package-lock.json');
-    run('git pull');
+    try {
+      run('git restore package.json package-lock.json');
+      run('git pull');
+    } catch {
+      run('git restore package.json');
+      run('git pull');
+    }
   };
 }
 
