@@ -15,6 +15,11 @@ class Commander {
       run('git pull');
     }
   };
+
+  restart = () => {
+    run('rm -rf node_modules package-lock.json');
+    run('npm i')
+  }
 }
 
 module.exports = Commander;
