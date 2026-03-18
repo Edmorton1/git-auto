@@ -12,4 +12,26 @@ if (command) {
   process.exit(0);
 }
 
-console.log('casd3asdasdasd4123123');
+console.log(`
+> merge
+-- checkout to source branch + create branch + commit + push
+< task
+  * 123123
+< env
+  * default: develop
+    * develop
+    * hotfix
+
+> pull
+-- restore package.json, package-lock.json + pull
+
+> restart
+-- rm -rf node_modules, package-lock.json + npm i + restart kuber service
+< s
+  * objects.business
+
+> push
+-- commit -m + push
+< m
+  * fix after review
+`);
